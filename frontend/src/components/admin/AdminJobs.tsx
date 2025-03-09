@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import Navbar from '../shared/Navbar';
-import { setSearchCompanyByText } from '@/redux/companySlice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import AdminJobsTable from './AdminJobsTable';

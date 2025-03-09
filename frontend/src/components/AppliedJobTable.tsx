@@ -1,10 +1,9 @@
-import React from 'react'
+
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from './ui/table'
 import { Badge } from './ui/badge'
 import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';
-import { spawn } from 'child_process';
-import useGetAllJobs from '@/hooks/useGetAllJobs';
+
 
 const AppliedJobTable = () => {
     const { allAppliedJobs } = useSelector((store: RootState) => store.jobSlice);
@@ -22,7 +21,7 @@ const AppliedJobTable = () => {
             </TableHeader>
             <TableBody>
                 {
-                    allAppliedJobs && allAppliedJobs.length>=0 && allAppliedJobs.map((item,index)=>(
+                    allAppliedJobs && allAppliedJobs.length>=0 && allAppliedJobs.map((item)=>(
                         <TableRow key={item._id}>
                             <TableCell>{item?.createdAt.toString().split('T')[0]}</TableCell>
                             <TableCell>{item.job.title}</TableCell>

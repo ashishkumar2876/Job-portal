@@ -1,5 +1,4 @@
 
-import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import {
   Table,
   TableBody,
@@ -11,7 +10,7 @@ import {
 } from "../ui/table";
 import { Popover } from "../ui/popover";
 import { PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
-import { Edit2, Eye, MoreHorizontal } from "lucide-react";
+import {Eye, MoreHorizontal } from "lucide-react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 import { useEffect, useState } from "react";

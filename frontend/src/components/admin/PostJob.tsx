@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import Navbar from "../shared/Navbar";
@@ -13,7 +13,6 @@ import { useNavigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 
 
-const companyArray = [];
 
 const PostJob = () => {
   const [input, setInput] = useState({

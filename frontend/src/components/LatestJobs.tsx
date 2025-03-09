@@ -2,8 +2,6 @@
 import { useSelector } from "react-redux";
 import LatestJobCards from "./LatestJobCards";
 import { RootState } from "@/redux/store";
-import { spawn } from "child_process";
-import { useNavigate } from "react-router-dom";
 
 const LatestJobs = () => {
   const { allJobs } = useSelector((store: RootState) => store.jobSlice);
