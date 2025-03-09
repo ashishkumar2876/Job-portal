@@ -31,7 +31,7 @@ const Login = () => {
     try {
       dispatch(setLoading(true));
       const res = await axios.post(
-        "https://job-portal-xjru.onrender.com/api/v1/user/login",
+        "https://job-portal-1-2jdg.onrender.com/api/v1/user/login",
         input,
         {
           headers: {

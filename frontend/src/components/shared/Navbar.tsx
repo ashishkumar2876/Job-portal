@@ -20,7 +20,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logoutHandler = async () => {
     try {
-      const res = await axios.get("https://job-portal-xjru.onrender.com/api/v1/user/logout", {
+      const res = await axios.get("https://job-portal-1-2jdg.onrender.com/api/v1/user/logout", {
         withCredentials: true,
       });
       if (res.data.success) {
