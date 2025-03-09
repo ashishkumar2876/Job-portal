@@ -123,7 +123,7 @@ const UpdateProfileDialog: React.FC<UpdateProfileDialogProps> = ({
       }
     try {
         setLoading(true);
-        const res=await axios.post("http://localhost:3000/api/v1/user/update",formData,{
+        const res=await axios.post("https://job-portal-xjru.onrender.com/api/v1/user/update",formData,{
             headers:{
                 'Content-Type': 'multipart/form-data'
             },
